@@ -21,7 +21,7 @@ const Search = ({ data, fuzzySearch }) => {
       <div key={idx} className="item">
         <div className="content"></div>
         <a className="ui blue inverted small header" href={result.link}>
-          {result.title}
+          {`${result.title} -> (${result.link})`}
         </a>
         <div className="description">
           {result.timeStamp} | {result.comments} comments
